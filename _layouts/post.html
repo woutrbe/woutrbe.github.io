@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<article class="post">
+	<h2 class="post__title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+	<time class="post__date" datetime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time>
+
+	<div class="post__body">
+		{{ content }}
+	</div>
+</article>

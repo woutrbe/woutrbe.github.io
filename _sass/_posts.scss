@@ -1,0 +1,37 @@
+.posts-list {
+
+}
+	.posts-list__post {
+		margin-bottom: 1rem;
+	}
+	.posts-list__title,
+	.post__title {
+		margin: 0 0 5px 0;
+
+		font-size: 1.6rem;
+		font-weight: 700;
+
+		> a {
+			color: #333;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.posts-list__date,
+	.post__date {
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: #000;
+	}
+
+.post {
+
+}
+	.post__body {
+		font-size: 1rem;
+		line-height: 1.6rem;
+	}

@@ -15,6 +15,7 @@ body {
 
 .wrapper {
 	width: 75%;
+	max-width: 760px;
 	margin: 0 auto;
 }
 
@@ -32,6 +33,17 @@ body {
 
 		margin: 0px;
 		padding: 0px;
+
+		> a {
+			text-decoration: none;
+			color: #333;
+		}
+
+		&:hover {
+			> a {
+				text-decoration: underline;
+			}
+		}
 	}
 	.header nav {
 		float: right;
@@ -47,7 +59,6 @@ body {
 	BODY
 \*---------------------------*/
 .intro {
-	width: 50%;
 	margin: 100px auto 40px auto;
 
 	font-weight: 300;

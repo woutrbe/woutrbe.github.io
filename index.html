@@ -1,24 +1,36 @@
 ---
-layout: compress
+layout: default
 ---
 
-{% include header.html %}
+<section class="intro">
+	Product focussed developer with a full-stack background <br> living in Hong Kong.
+</section>
 
-<div class="wrapper">
-	<section class="header">
-		<h1>Wouter De Loose</h1>
-	</section>
+<section class="social">
+	<ul>
+		{% for social in site.data.social %}
+			<li><a href="{{ social.href }}" title="{{ social.title }}" target="_blank"><i class="{{ social.icon }}"></i></a></li>
+		{% endfor %}
+	</ul>
+</section>
 
-	<section class="intro">
-		Product focussed developer with a full-stack background living in Hong Kong.
-	</section>
-	<section class="social">
-		<ul>
-			{% for social in site.data.social %}
-				<li><a href="{{ social.href }}" title="{{ social.title }}" target="_blank"><i class="{{ social.icon }}"></i></a></li>
-			{% endfor %}
-		</ul>
-	</section>
-</div>
+<section class="posts-lists">
+	<!-- This loops through the paginated posts -->
+	{% for post in paginator.posts %}
+		<div class="posts-list__post">
+			<h3 class="posts-list__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			<time class="posts-list__date" datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time>
+		</div>
+	{% endfor %}
 
-{% include footer.html %}
+	<!-- Pagination links -->
+	<div class="pagination">
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path }}">Older posts</a>
+		{% endif %}
+
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path }}">Newer posts</a>
+		{% endif %}
+	</div>
+</section>

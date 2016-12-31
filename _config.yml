@@ -3,12 +3,13 @@ title: Wouter De Loose
 email: wouter@woutr.me
 description: Product focussed developer with a full-stack background living in Hong Kong.
 baseurl: ""
-url: "http://localhost"
+url: "http://127.0.0.1:4333"
 
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -22,6 +23,8 @@ compress_html:
   comments: ["<!-- ", " -->"]
   endings: all
   blanklines: false
+paginate: 5
+paginate_path: "/page:num/"
 
 # Development
 port: 4333
