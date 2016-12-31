@@ -1,0 +1,27 @@
+# Site settings
+title: Wouter De Loose
+email: wouter@woutr.me
+description: Product focussed developer with a full-stack background living in Hong Kong.
+baseurl: ""
+url: "http://localhost"
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - CNAME
+sass:
+  style: compressed
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  blanklines: false
+
+# Development
+port: 4333

@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+
+{% include header.html %}
+
+<div class="wrapper">
+	<section class="header">
+		<h1>Wouter De Loose</h1>
+	</section>
+
+	<section class="intro">
+		Product focussed developer with a full-stack background living in Hong Kong.
+	</section>
+	<section class="social">
+		<ul>
+			{% for social in site.data.social %}
+				<li><a href="{{ social.href }}" title="{{ social.title }}"><i class="{{ social.icon }}"></i></a></li>
+			{% endfor %}
+		</ul>
+	</section>
+</div>
+
+{% include footer.html %}
