@@ -34,4 +34,31 @@
 	.post__body {
 		font-size: 1rem;
 		line-height: 1.6rem;
+
+		.highlight,
+		p > code {
+			max-width: 100%;
+			overflow: auto;
+
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			padding: 5px;
+			line-height: 1rem;
+		}
+	}
+	.post__note {
+		color: #ccc;
+		font-style: italic;
+		line-height: 1.6rem;
+
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+
+		padding: 10px 0;
+		margin: 20px 0;
+	}
+	.post__comments-title {
+		font-size: 1.5rem;
+		font-weight: 700;
 	}

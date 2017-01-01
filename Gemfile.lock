@@ -50,6 +50,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-paginate
   minima (~> 2.0)
+  rouge
 
 RUBY VERSION
    ruby 2.0.0p648
