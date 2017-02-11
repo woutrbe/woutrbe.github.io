@@ -30,9 +30,9 @@ module.exports = {
 	resolve: {
 		alias: {
 			// For development
-			'config': path.resolve(config.src, 'config', 'development.js')
+			'config': path.resolve(__dirname, 'config', 'development.js')
 			// For production
-			'config': path.resolve(config.src, 'config', 'production.js')
+			'config': path.resolve(__dirname, 'config', 'production.js')
 		}
 	}
 }
