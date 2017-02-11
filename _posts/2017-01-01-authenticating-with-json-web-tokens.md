@@ -4,7 +4,7 @@ title: Authenticating with JSON Web Tokens and Passportjs
 comments: true
 ---
 
-This article is aimed at developers who are looking to intagrate JWTs into their stateless API.
+This article is aimed at developers who are looking to integrate JSON Web Tokens (JWT) into their stateless API.
 I won't be going through the setup of your express app, but will only be focussing on how to integrate JWT authentication and we'll also be looking at how JWTs can work in parallel with other authentication / authorazation strategies such as Facebook and Twitter.
 
 ### What you'll need
@@ -71,7 +71,7 @@ router.get('/profile', passport.authenticate('jwt', { session: false }), (req, r
 
 ## Generating a JSON Web Token
 
-We'll need a way to actually generate JWTs, there's multiple ways to do this, but I'll be focussing on traditional web applications, where the user is required to login first with their email and password.
+We'll need a way to actually generate JWTs, there are multiple ways to do this, but I'll be focussing on traditional web applications, where the user is required to login first with their email and password.
 Since we're using Passport, we can simply integrate [passport-local](https://github.com/jaredhanson/passport-local).
 
 We can then create our login route:
