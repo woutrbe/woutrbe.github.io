@@ -8,6 +8,7 @@ Most developers who use node are aware of [node-config](https://github.com/loren
 That means you could have a `development.json` and a `production.json` configuration, `node-config` will pick the correct configration based on the environment.
 
 A typical setup would look like this:
+
 ```
 ├──config
 |   ├──default.json           * Default parameters
