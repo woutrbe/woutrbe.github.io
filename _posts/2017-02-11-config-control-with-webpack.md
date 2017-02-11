@@ -23,6 +23,7 @@ There might be some other parameters that are changed during your production bui
 
 [Webpack](https://webpack.github.io) has a configuration option called `resolve.alias`, this allows you to replace modules with other modules or paths.
 With that in mind, we can simply do:
+
 ```javascript
 module.exports = {
 	resolve: {
@@ -37,6 +38,7 @@ module.exports = {
 ```
 
 In any JavaScript file, we can get our config as follows:
+
 ```javascript
 import config from 'config';
 console.log(config);
