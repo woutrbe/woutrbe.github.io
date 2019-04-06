@@ -1,15 +1,19 @@
----
-layout: default
----
+<!DOCTYPE html>
+<title> Wouter De Loose</title>
 
-<section class="intro">
-	Product focussed developer with a full-stack background <br> living in Hong Kong.
-</section>
+<style>
+body {
+	margin: 0;
+	background-color: #000;
+}
+.x {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
 
-<section class="social">
-	<ul>
-		{% for social in site.data.social %}
-			<li><a href="{{ social.href }}" title="{{ social.title }}" target="{{ social.target }}"><i class="{{ social.icon }}"></i></a></li>
-		{% endfor %}
-	</ul>
-</section>
+	font-size: 40px;
+	color: #fff;
+}
+</style>
+
+<span class="x">...</span>

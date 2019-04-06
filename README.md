@@ -1,15 +1,5 @@
 # Wouter De Loose
 
-## Getting started
-
-Make sure you have [Jekyll](https://jekyllrb.com/docs/installation/) installed, after run `bundle install` to install all gem files.
-
-Run `jekyll serve --watch` to start developing.
-
-If you want to include draft posts, run `jekyll serve --watch --drafts`
-
-Run `jekyll build` to generate your build folder.
-
 ## License
 
 The MIT License (MIT)
