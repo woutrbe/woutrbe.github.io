@@ -1,4 +1,0 @@
-/* TEAM */
-	Owner: Wouter De Loose
-	Contact: wouter [at] woutr [dot] me
-	From: Belgium
